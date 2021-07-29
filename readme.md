@@ -1,3 +1,3 @@
 #kokoatalk clone update
 
-CSS got much better
+HTML & CSS got much better and fun
