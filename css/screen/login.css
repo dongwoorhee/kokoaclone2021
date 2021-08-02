@@ -1,0 +1,70 @@
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    /* imported font from google font  */
+}
+/* you can apply flex alignment to the box property */
+/* if you align a text eliment like h and p tag you should use text alignment */
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.welcome-header__text {
+    width: 50%;
+    opacity: 0.7;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+    /* align-items: center; */
+}
+
+#login-form input {
+    padding: 15px 0px;
+    border: 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: border 0.1s ease-in-out;
+}
+
+#login-form input[type="submit"] {
+    background-color: var(--yellow);
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+/* #login-form :nth-child(1),
+#login-form :nth-child(2) {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: border 1s ease-in-out;
+} */
+
+/* choose one... */
+
+#login-form input:focus {
+    border-color: var(--yellow);
+}
+
+#login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
