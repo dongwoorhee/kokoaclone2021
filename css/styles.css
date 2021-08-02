@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('reset.css');
+@import url('statusbar.css');
+@import url('variables.css');
 
 html {
     display:flex;
@@ -13,31 +16,53 @@ body {
     font-family: 'Open Sans', sans-serif;
     border: 1px solid black;
 }
-.status-bar {
-    display: flex;
-    /* justify-content: space-between; */
-    justify-content: center;
-}
 
-.status-bar__column {
-    width: 33%;
-}
-/* if you set justyfy content space-between all content doesn't place in the center  */
-.status-bar__column:first-child span {
-    margin-right: 5px;
-}
-
-.status-bar__column:nth-child(2) {
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
     display: flex;
-    justify-content: center;
-}
-
-.status-bar__column:last-child {
-    display: flex;
-    justify-content:flex-end;
+    flex-direction: column;
     align-items: center;
+    font-weight: 600;
+    /* imported font from google font  */
+}
+/* you can apply flex alignment to the box property */
+/* if you align a text eliment like h and p tag you should use text alignment */
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
 }
 
-.status-bar__column:last-child span, i {
-    padding-left: 5px;
+.welcome-header__text {
+    width: 50%;
+    opacity: 0.7;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+    /* align-items: center; */
+}
+
+#login-form input {
+    padding: 15px 0px;
+    border: 0px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+    transition: border 1s ease-in-out;
+}
+
+#login-form input:focus {
+    border-color: var(--yellow);
+}
+
+#login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form a {
+    text-align: center;
 }
