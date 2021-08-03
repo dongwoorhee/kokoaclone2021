@@ -1,0 +1,50 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 660px;
+    box-sizing: border-box;
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+    border-top: 1px solid rgba(121, 121, 121, 0.26);
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    color: #2e363e;
+}
+
+.nav__btn {
+    position: relative;
+    /* you should designate its position as relative to use absolute children */
+}
+
+.nav__notification {
+    background-color: tomato;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+}
+/* position absolute should be applied to closet parent that have relative position attribute */
+
+.nav__dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: tomato;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
