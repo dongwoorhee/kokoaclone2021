@@ -5,6 +5,7 @@
 /* component  */
 @import url('component/statusbar.css');
 @import url('component/navigationbar.css');
+@import url('component/screen-header.css');
 
 /* screen */
 @import url('screen/login.css');
@@ -12,7 +13,6 @@
 html {
     display:flex;
     justify-content: center;
-
 }
 
 body {
