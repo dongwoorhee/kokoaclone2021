@@ -7,10 +7,12 @@
 @import url('component/navigationbar.css');
 @import url('component/screen-header.css');
 @import url('component/user-components.css');
+@import url('component/badge.css');
 
 /* screen */
 @import url('screen/login.css');
 @import url('screen/friends.css');
+@import url('screen/chats.css');
 
 html {
     display:flex;
@@ -24,4 +26,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     border: 1px solid black;
     color: #2e363e;
+}
+
+.main-screen {
+    padding: 0 var(--horizontal-space);
 }
