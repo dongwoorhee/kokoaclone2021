@@ -13,6 +13,7 @@
 @import url('screen/login.css');
 @import url('screen/friends.css');
 @import url('screen/chats.css');
+@import url('screen/find.css');
 
 html {
     display:flex;
