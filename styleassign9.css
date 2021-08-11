@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --margin-left: 20px;
+    --margin-top: 40px;
+    --shadow: 2px 3px 0px rgba(0, 0, 0, 0.8);
+    --border-custom: 2px solid black;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .outerbox {
+    width: 300px;
+    border: 4px solid rgb(30, 199, 199);
+    /* display: flex; */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-top: var(--margin-top);
+    margin-left: var(--margin-left);
+  }
+  
+  .header__icon {
+    width: 38%; 
+  }
+  
+  .header__title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  
+  .playsong {
+    display: flex;
+    margin-left: var(--margin-left);
+    margin-top: var(--margin-top);
+  }
+  
+  .playsong__icon {
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: orange;
+  }
+  
+  .playsong__icon i {
+    color: white;
+  }
+  
+  .playsong-detail {
+    padding: 10px 10px;
+  }
+  
+  .playsong__title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .playsong__singer {
+    margin-top: 5px;
+  }
+  
+  .button {
+    margin: var(--margin-top) var(--margin-left);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button__play {
+    border: var(--border-custom);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    width: 50%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+  }
+  
+  .button__circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: var(--border-custom);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: center; 
+    padding: 10px 0px;
+  }
+  
+  .songlist {
+    margin-left: var(--margin-left);
+    margin-bottom: var(--margin-top);
+    display: flex;
+  }
+  
+  .songlist__icon {
+    border: var(--border-custom);
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .songlist__detail {
+    margin-left: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .songlist__detail-title {
+    font-weight: bold;
+    font-size: 19px;
+  }
+  
+  .tomato {
+    background-color: tomato;
+  }
+  
+  .pink {
+    background-color: pink;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .teal {
+    background-color: teal;
+  }
