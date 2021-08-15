@@ -8,12 +8,14 @@
 @import url('component/screen-header.css');
 @import url('component/user-components.css');
 @import url('component/badge.css');
+@import url('component/icon-row.css');
 
 /* screen */
 @import url('screen/login.css');
 @import url('screen/friends.css');
 @import url('screen/chats.css');
 @import url('screen/find.css');
+@import url('screen/more.css');
 
 html {
     display:flex;
