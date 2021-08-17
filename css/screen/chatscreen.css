@@ -1,3 +1,40 @@
 #chatscreen {
+    width : 660px;
+    height: 11000vh;
+    position: relative;
     background-color: #abc1d1;
 }
+
+#chatscreen .status-bar {
+    z-index: 2;
+    background-color: #abc1d1;
+}
+
+#chatscreen .alt-header {
+    top: 0px;
+    position: fixed;
+    width: 660px;
+    box-sizing: border-box;
+    top: 10px;
+    background-color: #abc1d1;
+    z-index: 1;
+}
+
+.main-chat {
+    /* position: sticky; */
+    margin-top: 150px;
+    /* z-index: 3; */
+    /* main-chat is not a fixed component so, z-index doesn't work, if you want to apply let it same position property with others */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat__timestamp {
+    color: white;
+    background-color: #92a4b2;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
