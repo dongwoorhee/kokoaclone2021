@@ -28,3 +28,28 @@
 .friends-screen {
     padding: 0 var(--horizontal-space);
 }
+
+@keyframes hidesplash {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        /* you can try with this property if you want to hide some component in the page  */
+    }
+}
+
+#splash-screen {
+    background-color: var(--yellow);
+    position: absolute;
+    width: 660px;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 132px;
+    animation: hidesplash 0.4s ease-in-out forwards;
+    animation-delay: 1s;
+}

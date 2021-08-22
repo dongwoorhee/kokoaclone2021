@@ -10,6 +10,7 @@
 @import url('component/badge.css');
 @import url('component/icon-row.css');
 @import url('component/alt-screen-header.css');
+@import url('component/no-mobile.css');
 
 /* screen */
 @import url('screen/login.css');
@@ -23,6 +24,8 @@
 html {
     display:flex;
     justify-content: center;
+    /* height: 100vh; */
+    /* width: 660px; */
 }
 
 body {
